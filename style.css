@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root{
+    --bg-color: #c6cde9;
+    --text-light: #fff;
+    --text-dark: #181943;
+    --box1: #585a94;
+    --box2: #926bcc;
+    --box3: #947db5;
+
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-family: "Inclusive Sans", sans-serif;
+    color: var(--text-color)
+}
+
+body{
+    padding: 1em;
+    background-color: var(--bg-color);
+}
+
+h1, h2, h3{
+    font-family: "Alata", sans-serif;
+    
+}
+
+nav {
+    margin: 1em auto 3em auto; /*margin for top, right, bottom, left*/
+    width: min(1000px, 100%);
+}
+
+nav ul{
+    display: flex;
+    align-items: centre;
+    list-style-type: none; /*removes bullet points*/
+    gap: 2em;
+}
+
+nav li:first-child{
+    margin-right: auto;
+    font-family: "Alata", sans-serif;
+    font-weight: bold;
+}
+
+nav a{
+    text-decoration: none; /*removes default underline*/
+    color:var(--text-light);
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+header, section{
+    margin: 2em auto;
+    width: min(75em, 100%);
+    background-color: var(--box1);
+    padding: min(2em, 15%);
+    border-radius: 1em;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: centre;
+    gap: 3em; /*adds gap betn text n image*/
+}
+
+header img{
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover; /*fills area without stretching*/
+
+}
+
+.text-container{
+    flex: 0 1 34em;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.text-container p{
+    margin: .75em 0 1em 0;
+    font-size: 1.25rem;
+}
+
+.cta-button{
+    display: inline-block;
+    text-decoration: none;
+    font-size: small;
+    color: var(--box3);
+    background-color: #c6cde9;
+    padding: .75em 1.35em;
+    border-radius:.5em;
+    font-weight: 600;
+    margin: 0.5em;
+
+}
+
+section{
+    padding: 3em min(2em, 15%);
+    background-color: var(--box3);
+    text-align: left;
+
+}
+
+h2{
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+}
+
+section p{
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+.hobby-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+section#photography {
+    background-color: var(--box3);
+    text-align: center;
+}
+
+.grid-container{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "img-1 img-2 img-3";
+    gap: 1em;
+}
+
+.grid-container img{
+    width: 100%;
+    height: 250px;
+    border-radius: 1em;
+    object-fit: cover;
+}   
+.grid-container img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.proj-container{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+}
+
+table th{
+    background-color: var(--box2);
+    color: var(--text-light);
+    padding: 1em;
+    border: 1px solid #666;
+    font-size: 1.1rem;
+}
+
+table td{
+    background-color: #d4d8f0;
+    color: var(--text-dark);
+    padding: 0.8em 1em;
+    border: 1px solid #999;
+}
+
+table tr:hover td{
+    background-color: #c6cde9;
+}
+
+.image-overlay-container{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+}
+
+.image-overlay-container img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+.overlay-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.overlay-text p{
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+footer{
+    margin-top: 3em;
+    background-color: var(--box2);
+    padding: 2em;
+    text-align: center;
+    border-radius: 1em;
+    color: var(--text-light);
+}
+
+footer h2{
+    color: var(--text-light);
+    margin-bottom: 1em;
+}
+
+footer p{
+    margin: 1em 0;
+    font-size: 1rem;
+}
+
+#Education .flex-container{
+    flex-direction: row-reverse;
+}
+
+#Education img{
+    margin-right: 0;
+    margin-left: auto;
+}

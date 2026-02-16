@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Nahin Warida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="projects.html">Projects</a> </li>
+                <li><a href="hobbies.html">Hobbies</a> </li>
+                <li><a href="index.html">Github</a> </li>
+                <li><a href="index.html">Discord</a> </li>
+                <li><a href="#Contacts">Contact Me</a> </li>
+            </ul>
+        </nav>
+        <div class="flex-container">
+            <img height ="300px" width="300px" src="https://amaliagomez.es/wp-content/uploads/2024/06/Tendencias-en-Product-Management.png" alt="Project">
+            <div class="proj-container">
+                <h2>Some of my notable works</h2>
+                <a href="#ML" class="cta-button">Machine learning</a>
+                <a href="#Robotics" class="cta-button">Robotics</a>
+                <a href="#Web-dev" class="cta-button">Web development</a>
+                <a href="#game-dev" class="cta-button">3D Game</a>
+            </div>
+        </div>
+        <p style="color: antiquewhite;">Check out more on my <a href="https://github.com/ridawarida">Github</a> profile!</p>
+    </header>
+
+    <section id="ML">
+        <h2>Works on Machine Learning</h2>
+        <div class="ML-project-container">
+            <ul>
+                <li><strong>From Leaves to Fruits: A Computer Vision Framework for Early-Stage Mango Quality Prediction and Mango Classification:</strong> Built a non-destructive, post-harvest computer vision framework  using deep learning architectures (EfficientNet-B7,
+
+DenseNet-121, ConvNeXt Tiny, and Swin Transformer V2 Tiny) and three hybrid clas-
+sifiers (Random Forest, SVM, Logistic Regression) to classify mango varieties and predicts sweetness profile from their leaf
+images, addressing challenges of data scarcity and high visual similarity among selected
+cultivars. </li>
+                <li><strong>Predictive Analysis of Diabetes Using Machine Learning:</strong> Developed a machine learning model to predict the likelihood of diabetes in patients based on a set of health-related features. Several supervised learning models, including Logistic Regression, Decision Tree, and a Neural Network built using TensorFlow, were implemented and compared with the aim of determining which approach performs best in terms of classification accuracy and reliability. </li>
+                <li><strong>Machine Learning Analysis of Music’s Impact on Mental Health Trends:</strong>  Evaluated four classification models—Random Forest, Gradient Boosting, XGBoost, and Logistic Regression—to predict music-induced mental health outcomes, categorizing effects into Worsen, No effect, and Improve using a dataset of 723 self-reported samples, 
+                
+            </ul>
+        </div>
+    </section>
+
+    <section id="Robotics">
+        <h2>Works on Robotics</h2>
+        <div class="Robotics-project-container">
+            <ul>
+                <li><strong>PathGuard: Discrete Logic-Driven Obstacle Avoider:</strong> Developed an au-
+tonomous robot car developed using fundamental hardware
+
+logic principles without the use of a microcontroller. The
+
+system detects obstacles in its path using infrared (IR) sen-
+sors and navigates by steering in the opposite direction,
+
+driven entirely by discrete transistor-based NOT gates and
+a dual H-bridge motor driver. The motivation behind this
+work stems from the long-term goal of developing assistive
+technologies for the elderly and physically challenged. The
+
+physical requirement for such assistive robots is the abil-
+ity to navigate indoor environments autonomously, avoiding
+
+common household obstacles.</li>
+                
+        </div>
+    </section>
+
+    <section id="Web-dev">
+        <h2>Works on Web development</h2>
+        <div class="Web-dev-project-container">
+            <ul>
+                <li><strong>Personal Portfolio Website:</strong> Developed a personal portfolio website using basic HTML, CSS, and JavaScript to showcase my projects, skills, and experiences. The website features a responsive design, interactive elements, and a clean layout to provide an engaging user experience.</li>
+                <li><strong>"Handy Laundry":</strong> Created an online laundry-servicing website using Laravel framework and MySQL that lets users book and purchase local laundromat services using customisations such as cloth type, fabric type and delivery timings.</li>
+                <li><strong>"Hotel Management":</strong> Developed a hotel management system using PHP and MySQL that allows hotel staff to manage room bookings, customer information, and billing. The system includes features such as room availability tracking, reservation management, and invoice generation to streamline hotel operations.</li>
+            </ul>
+    </section>
+
+    <section id="Game-dev">
+        <h2>Works on Game Development</h2>
+        <div class="Game-dev-project-container">
+            <ul>
+                <li><strong>"Red-light green-light":</strong> Inspired by the popular game from the Netflix series "Squid Game", I, along with my project partner, developed a 3D game on OpenGL where players must navigate a course while avoiding detection by a "doll" that turns around at random intervals. The game features multiple levels of increasing difficulty, with various game modes and cheat systems to enhance gameplay. The objective is to reach the finish line without being caught, providing an engaging and challenging gaming experience.</li>
+
+                </ul>
+    </section>
+        <footer id="Contacts">
+        <h3>Contact Me</h3>
+        <p>Feel free to reach out to me:</p>
+        <a href="mailto:Nahinwarida@gmail.com" class="cta-button">Nahinwarida@gmail.com</a>
+        
+        <div id="page-info" style="margin-top: 1.5em; font-size: 0.9rem;">
+            <p id="location"></p>
+            <p id="last-modified"></p>
+        </div>
+        <p style="margin-top:0.5em; font-size:0.85rem;">Illustrations: <a href="https://undraw.co" target="_blank" rel="noopener">unDraw</a> (used under unDraw terms). Photos &amp; writing © 2026 Nahin Warida.</p>
+    </footer>
+
+    <script>
+        document.getElementById('location').textContent = 'Current Page: ' + window.location.pathname;
+        document.getElementById('last-modified').textContent = 'Last Modified: ' + document.lastModified;
+    </script>
+</body>
+
+</html>
+
